@@ -1,0 +1,7 @@
+{
+  "name": "Birborsaci",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
