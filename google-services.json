@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "302749162524",
+    "firebase_url": "https://birborsaci-ca2c6.firebaseio.com",
+    "project_id": "birborsaci-ca2c6",
+    "storage_bucket": "birborsaci-ca2c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302749162524:android:c2872787899a95d77513d9",
+        "android_client_info": {
+          "package_name": "com.birbirsaci.viop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302749162524-v6q474esmrcn5rq6sbrbhgu74km21u56.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.birbirsaci.viop",
+            "certificate_hash": "4e223e3e3e41e68177133ff58334179a8cd6e547"
+          }
+        },
+        {
+          "client_id": "302749162524-jct1ibn35fkvfis9gjc5sede8s8d3rfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.birbirsaci.viop",
+            "certificate_hash": "4f33aaedad62ba2f40a1478ef7dc83fa33baa934"
+          }
+        },
+        {
+          "client_id": "302749162524-lvubd1p6qo6dheo7r945vc6fcv3aope0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjN5m15Pv8M7ZF5_IvUxIHCTCJgPl1QfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302749162524-lvubd1p6qo6dheo7r945vc6fcv3aope0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

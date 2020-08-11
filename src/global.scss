@@ -24,3 +24,12 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.ion-color-diagno {
+    --ion-color-base: var(--ion-color-diagno) !important;
+    --ion-color-base-rgb: var(--ion-color-diagno-rgb) !important;
+    --ion-color-contrast: var(--ion-color-diagno-contrast) !important;
+    --ion-color-contrast-rgb: var(--ion-color-diagno-contrast-rgb) !important;
+    --ion-color-shade: var(--ion-color-diagno-shade) !important;
+    --ion-color-tint: var(--ion-color-diagno-tint) !important;
+  }

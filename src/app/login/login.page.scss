@@ -1,0 +1,26 @@
+ion-content{
+
+   // --ion-background-color:#006699;
+  }
+  
+  .login100-form-avatar {
+      width: 160px;
+      height: 160px;
+     /* border-radius: 50%;*/
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .login100-form-avatar img {
+      width: 100%;
+    }
+    ion-input{
+      color: rgb(53, 52, 52);
+      font-weight: bold;
+    }
+    .blutext{
+      color: #006699;
+      font-weight: bold;
+    }
+    .nodecoraion{
+      text-transform: none;
+    }

@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar  color="diagno">
+    <ion-title><ion-icon color="light" name="finger-print-outline"></ion-icon> Kontrol Ekranı</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content center text-center>
+ 
+
+<!--<ion-button class="nodecoraion" color="success"  (click)="goLogin()"><b>Giriş Yap</b></ion-button>
+<ion-button class="nodecoraion" color="success"  (click)="goRegister()"><b>Kaydol</b></ion-button>
+<ion-button class="nodecoraion" color="success"  (click)="goIntro()"><b>Intro</b></ion-button>
+<ion-button class="nodecoraion" color="success"  (click)="goPrivacy()"><b>TestWeb</b></ion-button>-->
+
+
+<ion-card>
+  <ion-card-header>
+    <div *ngIf="response == 0 ">
+     
+      <ion-card-subtitle>Hoşgeldin <b>{{ screenmesage }}</b> Beklenti Girmeniz Gerekmekte</ion-card-subtitle>
+    </div>
+   <div *ngIf="response == 1 ">
+    <ion-card-subtitle><b>{{ screenmesage }}</b> Beklenti Girmişsiniz..</ion-card-subtitle>
+      <ion-button class="nodecoraion" color="diagno"  (click)="goTabs()"><b>Ana Ekran</b></ion-button>
+    </div>
+  </ion-card-header>
+
+  <ion-card-content>
+   
+    
+      <ion-item>
+        Beklenti Barı
+      </ion-item>
+      <ion-item>
+        <ion-range color="dark" (ionChange)="setBadge(curentgues)"  [(ngModel)]="curentgues" snaps="true" min="-100" max="+100" step="10">
+          <ion-icon color="danger"  slot="start"  name="arrow-down-circle-outline"></ion-icon>
+          <ion-icon color="success"  slot="end"  name="arrow-up-circle-outline"></ion-icon>
+        </ion-range>
+      </ion-item>
+      <div style="float: left;">
+      <svg width="120" height="120" viewBox="0 0 120 120" class="progress__svg">
+        <circle
+          [attr.r]="radius"
+          cx="60"
+          cy="60"
+          stroke-width="12"
+          class="progress__meter"
+        />
+        
+        <circle
+          [style.strokeDasharray]="circumference"
+          [style.strokeDashoffset]="dashoffset"
+          [attr.r]="radius"
+          cx="60"
+          cy="60"
+          stroke-width="12"
+          class="{{progrescolor}}"
+        />
+      </svg>
+    </div>
+      <div class="numberpos">
+      <div *ngIf="curentgues > 0 ">
+        <ion-badge color="success">{{ curentgues }}</ion-badge>
+        </div>
+        <div *ngIf="curentgues == 0 ">
+          <ion-badge color="warning">{{ curentgues }}</ion-badge>
+          </div>
+        <div *ngIf="curentgues < 0">
+          <ion-badge color="danger">{{ curentgues }}</ion-badge>
+          </div>
+        </div>
+     
+        <ion-button class="submitbtn" color="{{buttoncolor}}"  (click)="saveGuest()"><b>Kaydet</b></ion-button>
+
+    
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

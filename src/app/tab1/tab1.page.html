@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="diagno">
     <ion-title>
-      Tab 1
+      <ion-icon color="light" name="radio-outline"></ion-icon> Ana Ekran
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,61 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Ana Ekran</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+ <!-- <app-explore-container name="Tab 1 page"></app-explore-container>-->
+
+ <ion-card>
+
+
+  <ion-card-content>
+    <ion-item (click)="getXsiteData()">
+      <ion-icon item-start  *ngIf="xsite >= 0" name="caret-up-outline" color="success"></ion-icon>
+      <ion-icon item-start  *ngIf="xsite < 0" name="caret-up-outline" color="danger"></ion-icon>
+      Xsite {{xsite}} 
+    </ion-item>
+      <ion-item >
+      <ion-icon item-start  *ngIf="xsite_fark >= xsite" name="caret-up-outline" color="success"></ion-icon>
+      <ion-icon item-start *ngIf="xsite_fark < xsite" name="caret-down-outline" color="danger"></ion-icon>
+      XsiteFark {{xsite_fark}}
+    </ion-item>
+     <ion-item>
+      <ion-icon item-start  name="people-outline" color="secondary"></ion-icon>
+      Üye : {{totaluser}}
+      <ion-icon color="danger" name="locate-outline"></ion-icon>
+      Ziyaret : {{xsite_user}} 
+      <ion-icon color="warning" name="egg-outline"></ion-icon>
+      Etkisiz : {{xsite_user_zero}}
+    </ion-item>
+    
+    <!--<ion-marquee [speed]="30" [direction]="direction" style="height:122px">
+      <ul>
+    <div *ngFor="let xsiteitem of response_xiste">
+      <li>
+        
+        {{xsiteitem.uye_adi}} : {{xsiteitem.tahmin}}
+      </li>
+      
+     </div>
+     </ul>
+    </ion-marquee>-->
+   
+
+
+  </ion-card-content>
+</ion-card>
+<ion-virtual-scroll [items]="response_xiste" approxItemHeight="100px">
+  <div *virtualItem="let item">
+    <div [item]="item">
+      <ion-item>
+        <ion-icon item-start *ngIf="item.tahmin >= 0" name="caret-up-outline" color="success"></ion-icon>
+        <ion-icon item-start *ngIf="item.tahmin < 0" name="caret-down-outline" color="danger"></ion-icon>
+        {{ item.tahmin }} -- {{ item.uye_adi }}
+      </ion-item>
+
+    </div>
+  </div>
+</ion-virtual-scroll>
 </ion-content>

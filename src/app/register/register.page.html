@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="diagno">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Üye Kaydı</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #content>
+
+  <ion-card class="diagnocard">
+    <!--<img src="../../assets/images/chartloading.gif" />  -->   
+   
+      <ion-card-content>
+        <ion-item>
+          <ion-input type="text" placeholder="Kullanıcı Adı" [(ngModel)]="lusername" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="email" placeholder="Mail-Adresi" [(ngModel)]="lusermail" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Parola" [(ngModel)]="lpassword" required></ion-input>
+        </ion-item>
+    
+        <ion-item class="wht" >
+          <ion-icon slot="start" (click)="goPrivacy()" color="diagno" name="document-text-outline"></ion-icon>
+          <ion-label (click)="goPrivacy()" class="grtext">Kullanım Sözleş. Kabul Ediyorum</ion-label>
+          <ion-checkbox  color="diagno" checked="false" (click)="privacyChaced()" ></ion-checkbox>
+         
+        </ion-item>
+          <ion-button color="diagno" expand="block" (click)="SendDataFu()"><b>Kayıt Ol</b></ion-button>
+        
+    </ion-card-content>
+  </ion-card>
+  <div class="empty"></div>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="diagno">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Üye Girişi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="diagnocard">
+    <!--<img src="../../assets/images/chartloading.gif" />  -->   
+    <ion-card-title></ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-input type="email" placeholder="Mail-Adresi" [(ngModel)]="lusermail" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Parola" [(ngModel)]="lpassword" required></ion-input>
+        </ion-item>
+       
+          <ion-button color="diagno" expand="block" (click)="SendDataFu()"><b>Giriş Yap</b></ion-button>
+        
+    </ion-card-content>
+  </ion-card>
+<!--  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <div class="login100-form-avatar">
+            <img src="../../assets/images/logos.png" >
+          </div>
+        </div>
+        <div padding>
+          <ion-item>
+            <ion-input type="email" placeholder="Mail-Adresi" [(ngModel)]="lusermail" required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" placeholder="Parola" [(ngModel)]="lpassword" required></ion-input>
+          </ion-item>
+        </div>
+  
+        <div padding>
+          <ion-button class="nodecoraion" color="light" expand="block" (click)="SendDataFu()"><b style="color:#487EB1;">Giriş Yap</b></ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>-->
+</ion-content>

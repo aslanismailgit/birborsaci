@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>interview</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides [options]="slideOptions" pager="true">
+  <ion-slide>
+    <div class="slide">
+      <img class="logo" src="../../assets/images/icon.png"/>
+      <h2>Yönünü Seç</h2>
+      <p>Bar üzerinde yönü tahmin et..</p>
+      
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div class="slide">
+      <img class="logo" src="../../assets/images/icon.png"/>
+      <h2>Diğer Tahminleri Gör</h2>
+      <p>Yüzlerce tahmini gör.</p>
+      
+    </div>
+  </ion-slide>
+
+  <ion-slide>
+    <div class="slide">
+      <img class="logo" src="../../assets/images/icon.png"/>
+      <h2>Hoşgeldin</h2>
+      <ion-button class="nodecoraion" color="success"  (click)="goLogin()"><b>Giriş Yap</b></ion-button>
+      <ion-button class="nodecoraion" color="success"  (click)="goRegister()"><b>Kaydol</b></ion-button>
+      
+    </div>
+    <hr>
+  </ion-slide>
+
+
+
+</ion-slides>
+</ion-content>

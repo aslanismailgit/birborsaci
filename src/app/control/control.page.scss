@@ -1,0 +1,50 @@
+ion-range{
+    $range-ios-slider-height: "30px";
+}
+
+ion-badge{
+    font-size: 22px;
+}
+
+.progress__svg {
+    transform: rotate(-90deg);
+  }
+  
+  .progress__meter,
+  .progress__value {
+    fill: none;
+  }
+  
+  .progress__meter {
+    stroke: #ccc;
+    background-color:#ccc;
+  }
+  
+  .progress__value_green {
+    stroke: #28ba62;
+    transition: all;
+  }
+  .progress__value_red {
+    stroke: #ed576b;
+    background-color:#ccc;
+    transition: all;
+  }
+  .progress__value_yellow{
+    stroke: #c7c53d;
+    background-color:#ccc;
+    transition: all; 
+  }
+  .numberpos{
+      position: relative;
+      z-index: 100;
+      bottom: -45px;
+      left: -80px;
+  }
+  .card-center{
+    width:90%; // adjust width on your ion-card suitable on your screen
+    display:block;
+    margin: 0 auto;
+}
+.submitbtn{
+  margin-left: 10px;
+}
